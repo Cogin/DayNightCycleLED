@@ -20,4 +20,4 @@ Jumper wires (not required but recommended) [(a third amazon link, wow)](https:/
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/) \
-(use script this however you want)
+(use however you want)
