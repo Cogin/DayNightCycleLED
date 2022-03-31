@@ -1,0 +1,22 @@
+.slider{
+    appearance: none;
+    border: 2px black solid;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+#red.slider::-webkit-slider-thumb{
+        background: rgb(192, 0, 0);
+}
+#green.slider::-webkit-slider-thumb{
+    background: rgb(16, 192, 0);
+}
+#blue.slider::-webkit-slider-thumb{
+    background: rgb(26, 5, 141);
+}
