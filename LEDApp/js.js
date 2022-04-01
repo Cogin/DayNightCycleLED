@@ -13,24 +13,17 @@ blueslider.oninput = update;
 
 output.textContent = RGB.join(', ');
 
-fetch("http://192.168.1.101:7777/form", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-  },
-  body: RGB
-})
-
 function update() {
     console.log("updating")
     RGB[0] = redslider.value;
     RGB[1] = greenslider.value;
     RGB[2] = blueslider.value;
     output.textContent = RGB.join(', ');
-    fetch("http://192.168.0.13:8080/rgb", {
+    fetch("http://127.0.0.1:5000/rgb", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          'Access-Control-Allow-Origin': '*',
+          "Content-Type": "application/json"
         },
         body: JSON.stringify({RGB: RGB})
       })
