@@ -11,10 +11,18 @@ redslider.oninput = update;
 greenslider.oninput = update;
 blueslider.oninput = update;
 
-output.textContent = RGB.join(', ');
+console.log(RGB);
+fetch("http://192.168.0.99:5000/").then(response => response.json()).then(data => 
+{
+redslider.value = data.RGB[0];
+greenslider.value = data.RGB[1];
+blueslider.value = data.RGB[2];
+});
 
+output.textContent = RGB.join(', ');
+fetch("http://192.168.0.99:5000/").then(response => response.json()).then(data => console.log(data.RGB));
 function update() {
-    console.log("updating")
+  console.log(RGB);
     RGB[0] = redslider.value;
     RGB[1] = greenslider.value;
     RGB[2] = blueslider.value;

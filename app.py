@@ -24,6 +24,6 @@ def rgb():
         return 'OK'
         return '200'
     if request.method == 'GET':
-        return 'got'
+        return RGB
 
 app.run(debug = True, host='0.0.0.0')
