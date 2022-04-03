@@ -19,12 +19,12 @@ function update() {
     RGB[1] = greenslider.value;
     RGB[2] = blueslider.value;
     output.textContent = RGB.join(', ');
-    fetch("http://127.0.0.1:5000/rgb", {
+    fetch("http://192.168.0.99:5000/",{
         method: "POST",
         headers: {
           'Access-Control-Allow-Origin': '*',
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({RGB: RGB})
+        body: JSON.stringify({"RGB": RGB})
       })
 }
