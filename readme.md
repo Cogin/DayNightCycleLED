@@ -1,7 +1,7 @@
 # WS2811-Light-API
 
 Basic API for the WS2811 LEDs  \
-To be ran on a flask server with Python 3  \
+To be ran on a flask server with Python 3  
 
 
 
@@ -12,7 +12,7 @@ WS2811 LEDs [(amazon link)](https://www.amazon.com/ALITOVE-LED-Individually-Addr
 Jumper wires (not required but recommended) [(a third amazon link, wow)](https://www.amazon.com/Elegoo-EL-CP-004-Multicolored-Breadboard-arduino/dp/B01EV70C78)  \
 
 Flask  \
-rpi_ws281x \
+rpi_ws281x 
 
 
 
